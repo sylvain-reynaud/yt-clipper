@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Youtube clipper</title>
+</head>
+<body>
+<form action="./download/" method="POST">
+    {% csrf_token %}
+    Youtube URL (example : https://www.youtube.com/watch?v=fHkYds20GB8)<br>
+    <input type="text" name="url" value=""><br>
+    Start timing (hh:mm:ss.millisec)<br>
+    <input type="text" name="start" value="00:00:00"><br>
+    End timing (hh:mm:ss.millisec)<br>
+    <input type="text" name="end"value="00:00:00"><br>
+    Password<br>
+    <input type="password" name="password"><br>
+    <input type="submit" value="Download">
+    </form>
+</body>
+</html>
